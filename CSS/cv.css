@@ -1,0 +1,90 @@
+/*@author: Mathys IBO*/
+
+body{
+	margin-left: 5rem;
+	margin-right: 5rem;
+	padding-left: 2rem;
+	padding-right: 1.5rem;
+	font-size: 14pt;
+}
+
+header{padding-bottom: 2rem;}
+.header{
+	display: flex;
+	flex-direction: column;
+}
+
+.rang{
+	display: flex;
+	flex-direction: row;
+}
+
+h1, h3{color: rgb(112, 48, 160);}
+h2, span, #lang{color: rgb(172,133,194);}
+
+#photo{width: 17%;}
+#iam{
+	padding-left: 3rem;
+	font-size: 58pt;
+}
+
+#métier{
+	font-size: 20pt;
+	text-decoration: underline;
+}
+
+#accroche{
+	font-size: 14pt;
+	margin-left: 5rem;
+	margin-top: 30px;
+}
+
+/*CV*/
+.Cv{
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+#LienCv:visited{text-decoration: none;}
+#cv{
+	padding-top: 20px;
+	padding-left: 10px;
+	width: 12%;
+}
+
+#Study{font-style: italic;}
+
+/*Skills*/
+#skills{
+	display: flex;
+	justify-content: space-around;
+	/* justify-content: space-between; */
+	margin-bottom: 1rem;
+}
+
+.windows{margin-left: 10%;}
+.S_skills{margin-right: 7%;}
+
+#div_skill{margin-left: 4rem;}
+.marj{margin-left: 5rem;}
+
+#B_div1, #XP{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+#space{margin-right: 1rem;}
+
+/*Langues*/
+#Langues{margin-right: 8%;}
+
+/* § Divers*/
+.divers{
+	align-items: left;
+	width: 60%;
+}
+
+#end{padding-bottom: 3rem;}
+h2{font-style: italic;}
+#Lien_Mail:visited{text-decoration: none;}

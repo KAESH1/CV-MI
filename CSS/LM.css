@@ -1,0 +1,31 @@
+/*@author: Mathys IBO*/
+
+.container{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-left: 1.8rem;
+}
+
+h1, h3{color: rgb(112, 48, 160);}
+
+video{
+	padding-left: 15%;
+	padding-bottom: 5rem;
+	width: 65%;
+}
+
+.Lettre{
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+#LienLetr:visited{text-decoration: none;}
+
+#lettre{
+	padding-top: 20px;
+	padding-left: 10px;
+	width: 12%;
+}
+
+#LmTitle{padding-top: 7px;}
