@@ -27,6 +27,20 @@ body{
 	margin: 5%;
 }
 
+/*Masquer txt*/
+.masque{
+	position: relative;
+	opacity: 0;
+	transform: translateY(10px);
+	transition: 1s ease-in-out;
+}
+
+/*Apparition txt*/
+.demasquer{
+	transform: translateY(0px);
+	opacity: 1;
+}
+
 /*Column*/
 .col{
 	display: flex;

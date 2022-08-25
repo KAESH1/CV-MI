@@ -13,25 +13,44 @@
 
 <body>
 	<div class="container">
-		<p id="bvn">Bonjour et merci d'accorder une partie de votre temps à mon site vitrine. Mon nom est Mathys IBO et je souhaite devenir intégrateur web.</p>
+		<p id="bvn" class="masque">Bonjour et merci d'accorder une partie de votre temps à mon site vitrine. Mon nom est Mathys IBO et je souhaite devenir intégrateur web.</p>
 
 			<div class="col">
 				<img id="img1" src="Pic\subscribe2.png" alt="image coordonées">
 				<div>
-					<p id="info1">Vous pourez y trouver mon CV ainsi que des coordonées pour me joindre.</p>
+					<p id="info1" class="masque">Vous pourez y trouver mon CV ainsi que des coordonées pour me joindre.</p>
 				</div>
 			</div>
 
 			<div class="col2">
 				<img id="img2" src="Pic\GitHub2.png" alt="image dossier">
 				<div>
-					<p id="info2">Vous pourrez également consulter des projets que j'ai réaliser seul ou en équipe depuis mon GitHub.</p>
+					<p id="info2" class="masque">Vous pourrez également consulter des projets que j'ai réaliser seul ou en équipe depuis mon GitHub.</p>
 				</div>
 			</div>
 
 			<img id="img3" src="Pic\warning.png" alt="Panneau danger">
-			<p id="disclaimer">Ce site est encore en cours de construction alors un peu de patience !</p>
+			<p id="disclaimer" class="masque">Ce site est encore en cours de construction alors un peu de patience !</p>
 			<button type="button" id="color" onclick="window.location.href='cv.html';">Acceder au CV</button>
 	</div>
 </body>
 </html>
+
+<script type="text/Javascript">
+
+	window.addEventListener('scroll', reveal);
+	function reveal(){
+		var tmp=document.querySelectorAll('.masque');
+
+		for (var i=0; i<tmp.length; i++){
+			var wh=window.innerHeight;
+			var rt=tmp[i].getBoundingClientRect().top;
+			var rvp=10;
+
+			if (rt<wh-rvp) {
+				tmp[i].classList.add('demasquer');
+			}else{
+				tmp[i].classList.remove('demasquer');}
+		}
+	}
+</script>
