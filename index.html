@@ -5,8 +5,8 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<link rel="stylesheet" href="CSS/index.css">
-	<!-- <link rel="stylesheet" href="css/mobile.css" media="screen and (max-device-width: 480px)"/> -->
+	<link rel="stylesheet" href="CSS/index.css" media="screen and (max-device-width: 1024px)">
+	<link rel="stylesheet" href="CSS/mobile.css" media="screen and (max-device-width: 685px)"/>
 
 	<title>Acceuil CV</title>
 </head>
@@ -37,6 +37,7 @@
 </html>
 
 <script type="text/Javascript">
+
 	window.addEventListener('scroll', reveal);
 	function reveal(){
 		var tmp=document.querySelectorAll('.masque');
@@ -48,8 +49,7 @@
 
 			if (rt<wh-rvp) {
 				tmp[i].classList.add('demasquer');
-			}else{
-				tmp[i].classList.remove('demasquer');}
+			}else{tmp[i].classList.remove('demasquer');}
 		}
 	}
 </script>

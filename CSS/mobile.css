@@ -1,0 +1,48 @@
+/*@author: Mathys IBO*/
+
+:root{
+	--body-text-color: #000;
+	--body-background-color: lightgrey;
+}
+
+@media(prefers-color-scheme: dark){
+	:root{
+		--body-text-color: #fff;
+		--body-background-color: #161515;
+	}
+}
+
+body{
+	background-color: var(--body-background-color);
+	color: var(--body-text-color);
+	font-family: Arial, serif;
+	font-size: 30px;
+}
+
+/*Corps*/
+.container{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 5%;
+}
+
+.col{
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 15rem;
+}
+
+/*Feuille*/
+#img1{
+	padding-left: 30%;
+	width: 35%;
+}
+
+#info1{
+	text-align: center;
+	padding: 2.5rem 80px 0 20%;
+	/* padding-top: 2.5rem;
+	padding-right: 80px;
+	padding-left: 10%; */
+}
