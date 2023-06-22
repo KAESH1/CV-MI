@@ -1,0 +1,24 @@
+/* Thème */
+@import "var.css";
+
+/* -------------------------------CORPS DE LA PAGE------------------------------- */
+
+.wallpaper{
+	padding: 9% 9%;
+	background: transparent url("../Pic/img/bureau.jpg") 0 0 no-repeat fixed;
+	background-size: 99.9%;
+}
+
+#name{
+	font-size: 42pt;
+	text-transform: uppercase;
+	color: var(--btnFontCol);
+}
+
+p{font-size: 14pt;}
+
+a>img{
+	background-color: var(--Principal);
+	border-radius: 90px;
+	width: 3.5%;
+}

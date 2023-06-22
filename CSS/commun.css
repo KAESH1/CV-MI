@@ -1,0 +1,66 @@
+/* -------------------------------Thèmes------------------------------- */
+@import "var.css";
+
+/* -----------------------------Mise en page----------------------------- */
+
+html{
+	background-color: var(--Fond);
+	color: var(--Police);
+}
+
+body{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20pt;
+}
+
+.link{
+	text-decoration: none;
+	color: var(--Principal);
+	transition: 0.3s;
+}
+
+.link:hover{
+	color: var(--Secondaire);
+	cursor: pointer;
+}
+
+.link:active{color: var(--Terciaire);}
+.link:visited{text-decoration:none;}
+
+button{color: var(--btnFontCol);}
+button:hover{color: var(--Police-sec);}
+
+/* ----------------------------------NavBar---------------------------------- */
+
+header{
+	position: sticky;
+	top: 0px;
+}
+
+nav{
+	display: flex;
+	flex-direction: row;
+	background-color: var(--Fond);
+	padding-bottom: 0.5%;
+}
+
+#menu{
+	width: 4%;
+	margin-right: 68%;
+	cursor: pointer;
+}
+
+nav>button{
+	border: none;
+	transition: 0.3s;
+	padding: 0% 1.95%;
+	margin-left: 0.25%;
+	background-color: transparent;
+	border-left: 1px solid rgb(165, 165, 165);
+}
+
+nav>button:hover{background-color: rgba(165, 165, 165, 0.308);}
+nav>button:active{
+	background-color: var(--Terciaire);
+	color: var(--Secondaire);
+}
