@@ -59,14 +59,6 @@ p{font-size: 80%;}
 
 #gauche, #droite{width: 100%;}
 
-#gauche>*{
-	border: 1px solid blue;
-}
-
-#droite>*{
-	border: 1px solid palevioletred;
-}
-
 /* ----------------------------------PIED DE PAGE----------------------------------*/
 
 /* Style sur l'affichage des élément du pied de page */
@@ -78,6 +70,7 @@ footer{
 
 /* Zone contenant le fond d'écran */
 #formBox{
+	width: 100%;
 	background: 32% 48% url("../Pic/img/bureau.jpg") fixed;
 	padding: 0 0 2.5% 0;
 }
