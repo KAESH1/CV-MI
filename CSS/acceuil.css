@@ -1,0 +1,71 @@
+/* Import utile */
+@import "commun.css";
+
+/* -------------------------------Mise en page------------------------------- */
+
+main{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin: 6% 8% 0% 15%;
+}
+
+/* ---------------------------------SALUTATION--------------------------------- */
+
+#salut{
+	padding-top: 7%;
+	justify-content: center;
+	width: 21.5%;
+}
+
+#separateur{border-right: 1px solid var(--Police-sec);}
+
+/* ---------------------------------INFORMATION--------------------------------- */
+
+#message{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 0% 15%;
+}
+
+svg{
+	align-self: center;
+	position: absolute;
+	width: 11.5%;
+	right: 20%;
+	top: 18%;
+}
+
+svg>path{
+	fill: var(--Principal);
+	cursor: pointer;
+}
+
+#info{
+	position: absolute;
+	text-align: center;
+	right: 15%;
+	left: 65%;
+	top: 45%;
+}
+
+/* ----------------------------------BOUTON---------------------------------- */
+
+button{
+	border: 1px solid var(--Principal);
+	background-color: var(--Principal);
+	border-radius: 90px;
+	align-self: center;
+	padding: .5% 2%;
+	font-size: 20pt;
+	transition: .4s;
+	margin-top: 6%;
+}
+
+button:hover{
+	border: 1px solid var(--Secondaire);
+	background-color: transparent;
+}
+
+button:active{border: 1px solid var(--Terciaire);}

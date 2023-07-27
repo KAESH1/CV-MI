@@ -2,57 +2,101 @@
 <html lang="fr">
 
 <head>
+
 	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<link rel="stylesheet" href="CSS\commun.css">
-	<link rel="stylesheet" href="CSS\projet.css">
+	<link rel="stylesheet" href="CSS/projet.css">
 
-	<title>Projet</title>
+	<title>Train</title>
 </head>
 
-<body class="container">
-	<a name="top"></a>
+<body>
+
+	<!-- Retour au sommet de la page (invisible par défaut) -->
+
+	<a id="goTop" class="invisible" href="#">
+		<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+			<polyline points="112 328 256 184 400 328" style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:48px"/>
+		</svg>
+	</a>
+
+	<!-- Barre de navigation -->
+
 	<header>
 		<nav>
-			<span id="deco"></span>
-			<ul><a class="navLink" href="cv.html">CV</a></ul><span class="line"></span>
-			<ul><a class="navLink" href="LM.html">LM</a></ul><span class="line"></span>
-			<ul><a class="navLink" href="projet.html">Projet</a></ul><span class="line"></span>
-			<ul><a class="navLink" href="contact.html">Me contacter</a></ul>
+			<img id="icône" src="Pic/ionicons/menu.svg" alt="tag" onclick="window.location.href='#top'">
+			<ul>
+				<li class="liNav"><a class="link" href="page.html">Portfolio</a></li>
+				<li class="liNav"><a class="link" href="page.html#Propos">À propos</a></li>
+				<li class="liNav"><a class="link" href="page.html#Contact">Contact</a></li>
+			</ul>
 		</nav>
 	</header>
 
-	<h1>Projets réalisés</h1>
+	<a name="Web"></a>
+	<section>
+		<h2>Réalisations web</h2>
+		<p class="small">Oups... Il n'y a rien pour l'instant, un peu de patience.</p>
+	</section>
 
-	<div id="titrePrj">
-		<img id="sonicImg" src="Pic\sonic.png" alt="Logo projet Sonic">
-		<p id="nomPrj" >Sonic SpinBall</p>
-	</div>
-	<div id="imgBox">
-		<div class="bande">
-			<img src="Pic/spin-0.png" alt="Image 1 projet Sonic">
-			<img src="Pic/spin-1.png" alt="Image 2 projet Sonic">
-			<img src="Pic/spin-2.png" alt="Image 3 projet Sonic">
-			<img src="Pic/spin-3.png" alt="Image 4 projet Sonic">
-			<img src="Pic/spin-4.png" alt="Image 5 projet Sonic">
+	<a name="Logo"></a>
+	<section>
+		<h2>Logos</h2>
+		<p class="small">Oups... Il n'y a rien pour l'instant, un peu de patience.</p>
+	</section>
+
+	<!-- Carrousel Sonic Spinball -->
+
+	<a name="Autre"></a>
+	<section class="carrousel">
+		<h2>Autres réalisations</h2>
+		<a name="SonicSpinball"></a>
+		<div id="en-tete">
+			<img src="Pic/img/Sonic/sonic.png" alt="Sonic Spinball icône">
+			<h3>Sonic Spinball</h3>
 		</div>
-	</div>
+		<div id="imgBox1" class="imgBox">
+			<img id="imgAffichée1" class="imgAffichée" src="Pic/img/Sonic/0.png" alt="Image jeu sonic">
+		</div>
+		<div id="btnBox1" class="btnBox">
+			<button class="circIn" onclick=clic(0,0) >&nbsp;</button>
+			<button class="circOut" onclick=clic(0,1) >&nbsp;</button>
+			<button class="circOut" onclick=clic(0,2) >&nbsp;</button>
+			<button class="circOut" onclick=clic(0,3) >&nbsp;</button>
+			<button class="circOut" onclick=clic(0,4) >&nbsp;</button>
+		</div>
+		<div class="infoLangBox">
+			<p class="infoLang">Langage:</p>
+			<div class="langCell">Python</div>
+		</div>
+	</section>
+
+	<!-- Carrousel The Legend of Zelda: l'épopée de Lynk -->
+
+	<section class="carrousel">
+		<a name="ZLDL"></a>
+		<div id="en-tete">
+			<img src="Pic/img/Zelda/Bouclierepee.png" alt="Zelda l'épopée de Lynk icône">
+			<h3>The Legend of Zelda: L'épopée de Lynk</h3>
+		</div>
+		<div id="imgBox2" class="imgBox">
+			<img id="imgAffichée2" class="imgAffichée" src="Pic/img/Zelda/0.png" alt="Image jeu Zelda">
+		</div>
+		<div id="btnBox2" class="btnBox">
+			<button class="circIn" onclick=clic(1,0) >&nbsp;</button>
+			<button class="circOut" onclick=clic(1,1) >&nbsp;</button>
+			<button class="circOut" onclick=clic(1,2) >&nbsp;</button>
+			<button class="circOut" onclick=clic(1,3) >&nbsp;</button>
+			<button class="circOut" onclick=clic(1,4) >&nbsp;</button>
+		</div>
+		<div class="infoLangBox">
+			<p class="infoLang">Langage:</p>
+			<div class="langCell">Python</div>
+		</div>
+	</section>
 	
-	<div id="titrePrj2">
-		<img id="zeldaImg" src="Pic\Bouclierepee.png" alt="Logo projet Zelda">
-		<p id="nomPrj2">The Legend of Zelda: L'épopée de Lynk</p>
-	</div>
-	<div id="imgBox2">
-		<div class="bande2">
-			<img src="Pic/ZS0.png" alt="Image 1 projet Zelda">
-			<img src="Pic/ZS1.png" alt="Image 2 projet Zelda">
-			<img src="Pic/ZS2.png" alt="Image 3 projet Zelda">
-			<img src="Pic/ZS3.png" alt="Image 4 projet Zelda">
-			<img src="Pic/ZS4.png" alt="Image 5 projet Zelda">
-		</div>
-	</div>
-
 </body>
 </html>
+<script src="JS/DOM/carrousel.js"></script>
+<script src="JS/DOM/scroll.js"></script>

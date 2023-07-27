@@ -1,0 +1,98 @@
+/* Import utile */
+@import "commun.css";
+
+/* -----------------------------Mise en page----------------------------- */
+
+section{
+	width: 60%;
+	align-self: center;
+	margin-bottom: 7%;
+}
+
+/* -------------------------------Caroussel------------------------------- */
+
+/*-------En-tete*/
+#en-tete{
+	display: flex;
+	margin-bottom: 3%;
+	align-items: center;
+}
+
+#en-tete>img{ /*Icône*/
+	width: 12%;
+	height: 12%;
+}
+
+#en-tete>h3{ /*Titre*/
+	margin: 2% 0% 0% 2%;
+}
+
+h2{padding-top: 7.3%;}
+
+/*-------Image*/
+.imgBox>img{width: 100%;}
+
+.imgAffichée{
+	animation-name: Fade;
+	animation-duration: 6.5s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes Fade{ /* Animation de fondu d'entrée et de sortie */
+	0%{opacity: 0%;}
+	25%{opacity: 100%;}
+	75%{opacity: 100%;}
+	100%{opacity: 0%;}
+}
+
+/*-------Navigation*/
+/* Conteneur */
+.btnBox{
+	display: flex;
+	align-self: center;
+}
+
+/* Style sur les boutons */
+.btnBox>button{
+	margin-right: 7%;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.circIn{
+	border: 1px solid var(--Secondaire);
+	background: var(--Secondaire);
+}
+
+.circOut{
+	border: 1px solid var(--Principal);
+	background: transparent;
+}
+
+/* -------------------------Information langage utilisé------------------------- */
+
+.infoLangBox{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.infoLang{
+	font-size: 16pt;
+	color: var(--Police-sec);
+}
+
+.langCell{
+	display: inline;
+	background: var(--Terciaire);
+	border-radius: 12.5px;
+	font-size: small;
+	padding: .5% 1%;
+	margin-left: 1%;
+}
+
+.small{
+	font-size: small;
+	font-style: italic;
+}

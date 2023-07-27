@@ -1,0 +1,101 @@
+/* Import utile */
+@import "commun.css";
+
+/* -------------------------------CORPS DE LA PAGE------------------------------- */
+
+/* Fond d'écran où il y a le prénom */
+.wallpaper{
+	padding: 12% 9%;
+	background: url("../Pic/img/bureau.jpg") 0 0 no-repeat fixed;
+	background-size: cover;
+}
+
+/* Titre comportant mon nom */
+#name{
+	font-size: 42pt;
+	text-transform: uppercase;
+	color: var(--btnFontCol);
+}
+
+h2{
+	margin-top: 7%;
+	align-self: center;
+}
+
+/* Taille de la police */
+p{font-size: 80%;}
+.voirPlus{font-size: 60%;}
+
+/* ----------------------------------À propos----------------------------------*/
+
+/* Balise englobant les deux blocs de présentation dans la section "quelques mots sur moi" */
+#presentation{
+	width: 80%;
+	display: flex;
+	flex-direction: column;
+	align-self: center;
+	padding-top: 5%;
+}
+
+/* Blocs de présentation dans la section "quelques mots sur moi" */
+#prs, #prs2{width: 48%;}
+#prs{align-self: flex-start;}
+#prs2{align-self: flex-end;}
+
+/* ----------------------------------Projet----------------------------------*/
+
+#projet{
+	display: flex;
+	flex-direction: row;
+	margin: 0% 10%;
+}
+
+#gauche, #droite{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	width: 100%;
+}
+
+#gauche, #droite{width: 100%;}
+
+#gauche>*{
+	border: 1px solid blue;
+}
+
+#droite>*{
+	border: 1px solid palevioletred;
+}
+
+/* ----------------------------------PIED DE PAGE----------------------------------*/
+
+/* Style sur l'affichage des élément du pied de page */
+footer{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+/* Zone contenant le fond d'écran */
+#formBox{
+	background: 32% 48% url("../Pic/img/bureau.jpg") fixed;
+	padding: 0 0 2.5% 0;
+}
+
+/* Texte contenu dans le footer */
+#txtFormBox{font-size: large;}
+
+#txtFormBox, #faitPar{
+	text-align: center;
+	color: var(--btnFontCol);
+}
+
+/* Zone contenant les images des réseaux sociaux langages utilisés pour le site */
+#reseaux, #imgLang{text-align: center;} /* text-align: center pour que les images soient au centre */
+#reseaux>a, #imgLang{display: inline;} /* Display:inline pour éviter qu'une image prenne toute une ligne */
+.imgReseaux, .imgLang{width: 6%;}
+
+#info{
+	font-size: 10pt;
+	padding: .5% 0;
+}

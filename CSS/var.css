@@ -1,0 +1,32 @@
+
+/* Gestion automatique des couleurs du site */
+
+:root{ /* Variable constante peu importe le thème */
+	--Principal: #6320EE; /* Couleur principal du thème du site */
+	--Secondaire: #907AD6; /* Couleur secondaire du thème du site */
+	--btnFontCol: #f9f6ff; /* Couleur de la police des boutons */
+}
+
+@media (prefers-color-scheme: dark){ /* Thème en version sombre du site */
+	:root{
+		--Fond: #181A1B; /* Couleur de l'arrière plan */
+		--Police: #f4f0ff; /* Couleur principal de la police de la page */
+		--Police-sec: #979799; /* Déclinaison pour une seconde couleur de police*/
+		--Terciaire: #107890; /* Couleur terciaire du thème du site */ 
+		--lienFontCol: #907AD6; /* Couleur principak d'un lien */
+		--lienFontColHover: #6320EE; /* Couleur secondaire d'un lien */
+		--Ombre: rgba(11, 4, 20, 0.466); /* Couleur de l'ombre portée de la barre de navigation */
+	}
+}
+
+@media (prefers-color-scheme: light){ /* Thème en version claire du site */
+	:root{
+		--Fond: #FBFBFB; /* Couleur de l'arrière plan */
+		--Police: #151515; /* Couleur principal de la police de la page */
+		--Police-sec: #69747C; /* Déclinaison pour une seconde couleur de police*/
+		--Terciaire: #1B9AAA; /* Couleur terciaire du thème du site */
+		--lienFontCol: #6320EE; /* Couleur principak d'un lien */
+		--lienFontColHover: #907AD6; /* Couleur secondaire d'un lien */
+		--Ombre: rgba(129, 129, 129, 0.356); /* Couleur de l'ombre portée de la barre de navigation */
+	}
+}
