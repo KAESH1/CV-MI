@@ -57,11 +57,29 @@ p{font-size: 80%;}
 	width: 100%;
 }
 
-#gauche, #droite{width: 100%;}
+/* Style sur l'image de zelda pour la faire passer sous celle de sonic */
+#autreRéa{
+	z-index: -1;
+	position: relative;
+	margin: -20% 0% 0% 30%;
+}
+
+#droite>div{
+	display: flex;
+	flex-direction: column;
+}
+
+.previewGauche{margin-left: 17%;}
+.previewDroite{margin-left: 19%;}
+
+.previewGauche, .previewDroite{
+	border-radius: 10px;
+	width: 45%;
+}
 
 /* ----------------------------------PIED DE PAGE----------------------------------*/
 
-/* Style sur l'affichage des élément du pied de page */
+/* Style sur l'affichage des éléments du pied de page */
 footer{
 	display: flex;
 	flex-direction: column;
@@ -70,9 +88,9 @@ footer{
 
 /* Zone contenant le fond d'écran */
 #formBox{
-	width: 100%;
 	background: 32% 48% url("../Pic/img/bureau.jpg") fixed;
 	padding: 0 0 2.5% 0;
+	width: 100%;
 }
 
 /* Texte contenu dans le footer */
@@ -83,11 +101,28 @@ footer{
 	color: var(--btnFontCol);
 }
 
-/* Zone contenant les images des réseaux sociaux langages utilisés pour le site */
+/* Zone des images footer */
 #reseaux, #imgLang{text-align: center;} /* text-align: center pour que les images soient au centre */
 #reseaux>a, #imgLang{display: inline;} /* Display:inline pour éviter qu'une image prenne toute une ligne */
-.imgReseaux, .imgLang{width: 6%;}
 
+/* Images du footer */
+.imgReseaux, .imgLang{
+	width: 6%;
+	height: 6%;
+}
+
+/* Couleurs images footer */
+.imgReseaux>path, .imgReseaux>polyline, .imgReseaux>rect{
+	stroke: white; /* mail.svg utilise stroke */
+	fill: white;
+} 
+
+#html5>path{fill: #e44d21;} /* HTML */
+#css3>path{fill: #2362af;} /* CSS */
+#JS>path{fill: #d5ba32;} /* Javascript */
+
+
+/* Copyright */
 #info{
 	font-size: 10pt;
 	padding: .5% 0;
